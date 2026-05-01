@@ -10,22 +10,153 @@
 
     gtag('config', 'G-BWYD7K1NYB');
   </script>
+  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HECKERS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <main aria-label="Landing page de HECKERS">
-    <img class="logo" src="logo-heckers.png" alt="Logo de HECKERS" />
+  <main class="shell" aria-label="Landing page de HECKERS">
+    <header class="hero">
+      <div class="hero-top">
+        <span class="pill">Greatest Hits</span>
+        <span class="pill">Alto contenido en Ball Knowledge</span>
+      </div>
 
-    <h1>HECKERS</h1>
-    <p class="tagline">Your Favourite High Performance Group</p>
-    <p class="gar">Grupo de Alto Rendimiento y Ball Knowledge</p>
+      <img class="logo" src="logo-heckers.png" alt="Logo de HECKERS" />
 
-    <div class="spotify-embed">
-      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1bAKzG4HxxbQsf0AlFJ1fB?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
+      <h1>HECKERS</h1>
+      <p class="tagline">Your Favourite High Performance Group</p>
+      <p class="gar">Grupo de Alto Rendimiento y Ball Knowledge</p>
+      <p class="subcopy">Las mejores mentes del Buen Pastor. Si no entiendes el chiste, igual quedas invitado.</p>
+
+      <div class="cta-row">
+        <a class="btn" href="https://open.spotify.com/playlist/1bAKzG4HxxbQsf0AlFJ1fB" target="_blank" rel="noopener">Play the mix</a>
+        <a class="btn ghost" href="#join">Unirme al GAR</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-number">999+</span>
+          <span class="stat-label">Ball IQ</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Chisme aplicado</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Tareas serias</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-grid" aria-label="Secciones principales">
+      <article class="panel manifesto">
+        <h2>Tracklist oficial</h2>
+        <ul class="bullet">
+          <li>Intro: llegada con cara de "yo ya me la sabia".</li>
+          <li>Single: "No fue suerte, fue vision".</li>
+          <li>Remix: Ball knowledge con sabor a cafeteria.</li>
+          <li>Outro: cero formalidad, full lore.</li>
+        </ul>
+      </article>
+
+      <article class="panel roster">
+        <h2>El reparto</h2>
+        <div class="roster-grid">
+          <div class="roster-card">
+            <h3>Valcharta</h3>
+            <p>CEO del plot twist y el regano fino.</p>
+          </div>
+          <div class="roster-card">
+            <h3>Lama</h3>
+            <p>Entra con silencio, sale con un hit.</p>
+          </div>
+          <div class="roster-card">
+            <h3>Narciso</h3>
+            <p>Flow impecable, mirada de portada.</p>
+          </div>
+          <div class="roster-card">
+            <h3>Charly</h3>
+            <p>El que guarda el meme legendario.</p>
+          </div>
+          <div class="roster-card">
+            <h3>Parienta</h3>
+            <p>El punchline llega antes que todos.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel schedule">
+        <h2>Agenda del caos</h2>
+        <ul class="timeline">
+          <li>
+            <span class="time">19:00</span>
+            <span class="event">Llegada con cara de portada</span>
+          </li>
+          <li>
+            <span class="time">19:15</span>
+            <span class="event">Warm up: meme clasico vs meme nuevo</span>
+          </li>
+          <li>
+            <span class="time">20:00</span>
+            <span class="event">Sesion GAR: lore + snack break</span>
+          </li>
+          <li>
+            <span class="time">21:30</span>
+            <span class="event">Cierre con playlist y mirada de "ya nos vamos"</span>
+          </li>
+        </ul>
+      </article>
+
+      <article class="panel meme-wall">
+        <h2>Gags del album</h2>
+        <div class="chips">
+          <span>"Alerta: alto contenido en Ball Knowledge"</span>
+          <span>"Las mejores mentes del Buen Pastor"</span>
+          <span>"Parental Advisory: puro flow"</span>
+          <span>"Greatest hits, cero relleno"</span>
+          <span>"No fue suerte, fue panel"</span>
+          <span>"Meme aprobado por el consejo"</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel spotify-panel" aria-label="Playlist oficial">
+      <div class="panel-head">
+        <h2>Soundtrack oficial</h2>
+        <p>Greatest hits del grupo. Si no lo oyes, no cuenta en el lore.</p>
+      </div>
+      <div class="spotify-embed">
+        <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/playlist/1bAKzG4HxxbQsf0AlFJ1fB?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section class="panel faq" id="join" aria-label="FAQ">
+      <h2>FAQ de la banda</h2>
+      <details>
+        <summary>Que necesito para entrar?</summary>
+        <p>Ganas de aportar memes, buena vibra, y cero miedo al ridiculo.</p>
+      </details>
+      <details>
+        <summary>Hay uniforme?</summary>
+        <p>Solo se exige drip (o algo que se sienta comodo para brillar).</p>
+      </details>
+      <details>
+        <summary>Que pasa si no se de ball knowledge?</summary>
+        <p>Se aprende en vivo. Trae curiosidad y lo demas fluye.</p>
+      </details>
+    </section>
+
+    <footer class="footer">
+      <p>Hecho con cero formalidad y 100% entusiasmo. Si encuentras un bug, es parte del lore.</p>
+    </footer>
   </main>
 </body>
 </html>
