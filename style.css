@@ -1,12 +1,14 @@
 :root {
-  --bg: #fbf8ea;
-  --teal: #56b5b7;
+  --bg: #0a1f21;
+  --main-bg: rgba(10, 31, 33, 0.72);
+
+  --cyan-light: #4fd1c5;
   --teal-dark: #2d7f88;
-  --teal-soft: #a9ddcf;
-  --cream: #fff4c8;
-  --gold: #e8bd4d;
-  --sand: #b99b6c;
-  --text: #1f5961;
+
+  --text-light: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+
+  --glow: rgba(79, 209, 197, 0.1);
 }
 
 * {
@@ -18,10 +20,11 @@
 body {
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--text);
+  color: var(--text-secondary);
+  background-color: var(--bg);
   background:
-    radial-gradient(circle at top, rgba(169, 221, 207, 0.45), transparent 38%),
-    linear-gradient(135deg, var(--bg), var(--cream));
+    radial-gradient(circle at center, var(--glow), transparent 60%),
+    linear-gradient(135deg, var(--bg), #000000);
   display: grid;
   place-items: center;
   padding: 24px;
@@ -31,11 +34,12 @@ main {
   width: min(100%, 760px);
   text-align: center;
   padding: 48px 28px;
-  border: 1px solid rgba(86, 181, 183, 0.24);
+  border: 1px solid rgba(79, 209, 197, 0.15);
   border-radius: 32px;
-  background: rgba(255, 248, 226, 0.72);
-  box-shadow: 0 24px 80px rgba(45, 127, 136, 0.12);
-  backdrop-filter: blur(8px);
+  background: var(--main-bg);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 
 .logo {
@@ -43,14 +47,14 @@ main {
   height: auto;
   display: block;
   margin: 0 auto 28px;
-  filter: drop-shadow(0 18px 28px rgba(45, 127, 136, 0.14));
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.4));
 }
 
 h1 {
   font-size: clamp(3rem, 10vw, 6.8rem);
   line-height: 0.9;
   letter-spacing: 0.08em;
-  color: var(--teal-dark);
+  color: var(--text-light);
   text-transform: uppercase;
 }
 
@@ -59,14 +63,14 @@ h1 {
   font-size: clamp(1rem, 3vw, 1.3rem);
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--sand);
+  color: var(--text-secondary);
 }
 
 .gar {
   margin-top: 14px;
   font-size: clamp(1.15rem, 3vw, 1.75rem);
   font-weight: 700;
-  color: var(--teal);
+  color: var(--cyan-light);
 }
 
 .spotify-embed {
@@ -74,7 +78,7 @@ h1 {
   margin: 34px auto 0;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 18px 40px rgba(45, 127, 136, 0.14);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
 
 .spotify-embed iframe {
