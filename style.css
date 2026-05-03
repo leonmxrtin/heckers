@@ -84,6 +84,9 @@ h1 {
   border: 0;
 }
 
+/* =========================================
+   MENÚ LATERAL (SIDEBAR Y BOTÓN)
+   ========================================= */
 .menu-btn {
   position: fixed;
   top: 30px;
